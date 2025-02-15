@@ -1,0 +1,34 @@
+main .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+main .col-4 {
+    flex-basis: 25%;
+}
+
+main .col-4 img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+main .col-4 a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    main .col-4 {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    main .col-4 {
+        flex-basis: 100%;
+    }
+}
