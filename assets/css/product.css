@@ -20,11 +20,16 @@ main .details {
     line-height: 2;
 }
 
+main ul li {
+    margin-left: 25px;
+}
+
 .btn {
     background-color: lightgray;
     padding: 10px;
     border: none;
     cursor: pointer;
+    margin-top: 25px;
 }
 
 .btn:hover {

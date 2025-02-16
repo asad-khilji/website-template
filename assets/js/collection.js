@@ -46,14 +46,21 @@ function displayProducts() {
     currentItems.forEach(item => {
         const productElement = document.createElement('div');
         productElement.classList.add('col-4');
-        productElement.innerHTML = `
+        
+        // Create a link with a query parameter for the product ID
+        const productLink = document.createElement('a');
+        productLink.href = `product.html?productId=${item.id}`;  // Pass productId in the URL
+        productLink.innerHTML = `
             <img src="${item.image}" alt="${item.name}">
             <h3>${item.name}</h3>
             <h3>${item.price}</h3>
         `;
+        
+        productElement.appendChild(productLink);
         productContainer.appendChild(productElement);
     });
 }
+
 
 // This function will set up the pagination controls
 function setupPagination() {
