@@ -15,7 +15,7 @@ const createNav = () => {
 
     nav.innerHTML = `
     <nav>
-        <a href="#">Category</a>
+        <a href="collection.html?category=Category%20Four">Category</a>
         <a href="#">Category</a>
         <a href="#">Category</a>
         <a href="#">Category</a>

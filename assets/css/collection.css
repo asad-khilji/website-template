@@ -7,6 +7,7 @@ main .row {
 
 main .col-4 {
     flex-basis: 25%;
+    line-height: 2;
 }
 
 main .col-4 img {
@@ -19,6 +20,19 @@ main .col-4 img {
 main .col-4 a {
     text-decoration: none;
     color: black;
+}
+
+#pagination-container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+#pagination-container button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
